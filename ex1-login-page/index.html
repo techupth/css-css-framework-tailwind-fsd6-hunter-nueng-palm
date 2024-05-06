@@ -1,16 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Framework (Tailwind) Exercise 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS Framework (Tailwind) Exercise 1</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body>
-  <!-- Start coding here -->
-</body>
-
+  <body>
+    <div
+      class="box-border w-screen h-screen bg-slate-200 flex justify-center items-center"
+    >
+      <div class="flex flex-col border-0 rounded-xl bg-white w-74 h-fit p-2">
+        <h1 class="text-zinc-600 text-xl p-2">Login to Website</h1>
+        <form>
+          <div class="flex flex-row p-2 gap-9">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              class="border-2 rounded-md border-zinc-600 hover:border-violet-500 focus:outline-violet-300"
+            />
+          </div>
+          <div class="flex flex-row p-2 gap-2">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              class="border-2 rounded-md border-zinc-600 hover:border-violet-500 focus:outline-violet-300"
+            />
+          </div>
+          <div class="flex flex-row">
+            <button
+              class="border-0 w-36 p-2 rounded-full bg-violet-500 text-white active:bg-violet-600 hover:bg-violet-400 focus:ring focus:ring-violet-300"
+            >
+              Sign in
+            </button>
+            <button
+              class="border-0 w-36 p-2 rounded-full bg-white hover:bg-violet-100 focus:ring-violet-300 focus:ring focus-within:text-violet-600"
+            >
+              Sign Up
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
